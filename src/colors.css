@@ -1,0 +1,10 @@
+:root {
+    --mainColor: #ffc400;
+    --secondColor: #080808;
+    --errorColor: #cf0000;
+    --errorBackgroundColor: #fff1f1;
+    --border: #d4d4d4;
+    --placeholder: #858585;
+    --lightGrey: #eeeeee;
+    --grey: #cacaca;
+}

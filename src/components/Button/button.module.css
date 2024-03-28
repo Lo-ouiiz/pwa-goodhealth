@@ -1,0 +1,36 @@
+.buttonHighPriority {
+    background-color: black;
+    color: white;
+}
+
+.buttonLowPriority {
+    background-color: white;
+    font-weight: bold;
+}
+
+.buttonHighPriority,
+.buttonLowPriority {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 999px;
+    padding: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.buttonHighPriority:hover,
+.buttonLowPriority:hover {
+    transform: scale(102%);
+}
+
+.buttonHighPriority:disabled,
+.buttonLowPriority:disabled {
+    background-color: var(--grey);
+}
+
+.buttonHighPriority:disabled:hover,
+.buttonLowPriority:disabled:hover {
+    transform: unset;
+    cursor: not-allowed;
+}

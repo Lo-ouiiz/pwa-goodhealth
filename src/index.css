@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('/public/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins Regular', sans-serif;
+}
+
+body div#root {
+  display: grid;
+  align-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p, a, button, input, label {
+  font-size: 0.9rem;
+  font-family: 'Poppins Regular', sans-serif;
+}

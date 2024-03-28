@@ -1,0 +1,83 @@
+.root {
+    background-color: var(--mainColor);
+    min-height: 100vh;
+    padding: 1rem 1rem 4rem 1rem;
+}
+
+.header {
+    padding-bottom: 1rem;
+}
+
+.logoutButton {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+}
+
+.logoutButton::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: black;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.logoutButton:hover::after {
+    transform: scale(1);
+}
+
+.userContainer {
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    padding: 1rem 3.5rem 1rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.userField {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.editIcon {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+    .root {
+        padding: 1.25rem 2rem 5rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .root {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pageContainer {
+        width: 1024px;
+        position: relative;
+    }
+
+    .logoutButton {
+        top: -1rem;
+        right: 1rem;
+    }
+}

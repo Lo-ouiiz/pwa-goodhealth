@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.rootHidden {
+    display: none;
+}
+
+.button {
+    display: flex;
+    padding-left: 0.2rem;
+}
